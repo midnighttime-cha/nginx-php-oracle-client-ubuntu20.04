@@ -51,6 +51,7 @@ ln -s /opt/oracle/instantclient_12_2/libocci.so.12.1 /opt/oracle/instantclient/l
 ### เพิ่ม instance config
 ```bash
 echo /opt/oracle/instantclient_12_2 > /etc/ld.so.conf.d/oracle-instantclient.conf
+
 ldconfig
 ```
 
