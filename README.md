@@ -4,9 +4,9 @@
 
 ### ทำการ Download files จากเว็บไซต์ต่อไปนี้ [Download](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html)
 
-1. Dowload: instantclient-basic-linux.x64-12.2.0.4.0.zip
-2. Dowload: instantclient-sqlplus-linux.x64-12.2.0.4.0.zip
-3. Dowload: instantclient-sdk-linux.x64-12.2.0.4.0.zip 
+- Dowload: instantclient-basic-linux.x64-12.2.0.4.0.zip
+- Dowload: instantclient-sqlplus-linux.x64-12.2.0.4.0.zip
+- Dowload: instantclient-sdk-linux.x64-12.2.0.4.0.zip 
 
 ### สร้าง Directory ต่อไปนี้ และทำการย้ายไฟล์ Oracle client ที่ทำการ Download มาแล้วเก็บไว้ใน Directory ดังกล่าว
 ```bash
@@ -55,7 +55,7 @@ echo /opt/oracle/instantclient_12_2 > /etc/ld.so.conf.d/oracle-instantclient.con
 ldconfig
 ```
 
-## ติดตั้ง Nginx + php
+## 2. ติดตั้ง Nginx + php
 
 ### ติดตั้ง NGINX
 ทำการอัพเทเวอร์ชั่นของ Ubuntu และติดตั้ง NGINX ได้เลย
@@ -142,7 +142,7 @@ apt -y install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
 ```
 
 
-## 2. ติดตั้ง OCI8 ด้วย pecl
+## ติดตั้ง OCI8 ด้วย pecl
 
 ### ติดตั้ง oci8
 ```bash
@@ -150,7 +150,7 @@ pecl channel-update pecl.php.net
 pecl install oci8-2.0.12 # Use 'pecl install oci8-2.0.12' to install for PHP 5.2 - PHP 5.6.
 ```
 
-### 2.4. กรอก ORACLE_HOME
+### กรอก ORACLE_HOME
 Please provide the path to the ORACLE_HOME directory. Use 'instantclient,/path/to/instant/client/lib' if you're compiling with Oracle Instant Client [autodetect] :
 พิมพ์ตามนี้
 ```bash
