@@ -44,8 +44,8 @@ source ~/.bash_profile
 
 ### ทำการสร้าง shotcut link ต่อไปนี้
 ```bash
-ln -s /opt/oracle/instantclient_12_2/libclntsh.so.12.1 /opt/oracle/instantclient/libclntsh.so
-ln -s /opt/oracle/instantclient_12_2/libocci.so.12.1 /opt/oracle/instantclient/libocci.so	
+ln -s /opt/oracle/instantclient_12_2/libclntsh.so.12.1 /opt/oracle/instantclient_12_2/libclntsh.so
+ln -s /opt/oracle/instantclient_12_2/libocci.so.12.1 /opt/oracle/instantclient_12_2/libocci.so	
 ```
 
 ### เพิ่ม instance config
