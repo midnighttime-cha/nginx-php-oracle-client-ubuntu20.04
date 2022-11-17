@@ -134,11 +134,27 @@ sudo add-apt-repository ppa:ondrej/php ppa:ondrej/nginx-mainline && sudo apt upd
 จากนั้นติดตั้ง PHP5.6 และ extension กันได้เลย
 ```bash
 apt install -y php5.6 php5.6-fpm
-apt -y install php5.6-mysql php5.6-curl php5.6-gd php5.6-intl \
-  php-pear php-imagick php5.6-imap php5.6-mcrypt php5.6-memcache  \
-  php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy \
-  php5.6-xmlrpc php5.6-xsl php5.6-mbstring php5.6-gettext \
-  php5.6-dev build-essential libaio1
+apt -y install php5.6-mysql
+apt -y install php5.6-curl
+apt -y install php5.6-gd
+apt -y install php5.6-intl
+apt -y install php-pear
+apt -y install php-imagick
+apt -y install php5.6-imap
+apt -y install php5.6-mcrypt
+apt -y install php5.6-memcache
+apt -y install php5.6-pspell
+apt -y install php5.6-recode
+apt -y install php5.6-sqlite3
+apt -y install php5.6-tidy
+apt -y install php5.6-xml
+apt -y install php5.6-xmlrpc
+apt -y install php5.6-xsl
+apt -y install php5.6-mbstring
+apt -y install php5.6-gettext
+apt -y install php5.6-dev
+apt -y install build-essential
+apt -y install libaio1
 ```
 
 
