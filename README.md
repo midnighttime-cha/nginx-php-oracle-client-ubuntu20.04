@@ -185,7 +185,7 @@ echo "extension = oci8.so" >> /etc/php/5.6/cli/php.ini
 
 ### ทำการ restart service
 ```bash
-service php5-fpm restart
+service php5.6-fpm restart
 service nginx restart
 ```
 
