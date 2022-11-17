@@ -129,7 +129,7 @@ apt update
 จากนั้นตั้งค่า Repository ของ PHP กันครับด้วยคำสั่ง
 ```bash
 sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php && sudo apt update
+sudo add-apt-repository ppa:ondrej/php ppa:ondrej/nginx-mainline && sudo apt update
 ```
 จากนั้นติดตั้ง PHP5.6 และ extension กันได้เลย
 ```bash
