@@ -157,6 +157,10 @@ apt -y install build-essential
 apt -y install libaio1
 ```
 
+### ตรวจสอบว่าได้ลง Extension อะไรไปแล้วบ้าง
+```sh
+dpkg --get-selections | grep -i php
+```
 
 ## ติดตั้ง OCI8 ด้วย pecl
 
