@@ -214,6 +214,58 @@ oci8.connection_class => no value => no value
 oci8.events => Off => Off
 ```
 
+## 3. ตั้งค่า NGINX ให้ใช้งานกับ PHP
+สร้าง folder เฉพาะของ website ที่คุณต้องการ
+```bash
+sudo mkdir /var/www/your_domain
+```
+ทำการตั้งค่าสิทธิ์การเข้าถึงให้ folder ที่เราสร้างขึ้นมา
+```bash
+sudo chown -R $USER:$USER /var/www/your_domain
+```
+สร้างไฟล์ตั้งค่าของ website ของคุณ
+```bash
+sudo nano /etc/nginx/sites-available/your_domain.conf
+```
+ทำการตั้งค่า php socket ตาม version ที่คุณต้องการ โดยไฟล์ socket จะเก็บใน `/var/run/php/` สามารถตั้งค่าตามตัวอย่างด้านล่าง
+```
+# Fiile: /etc/nginx/sites-available/your_domain.conf
+
+server {
+  listen 80;
+  server_name www.mywebsite.com subdomain.mywebsite.com;
+  client_max_body_size 100M;
+
+  location / {
+    root /var/www/mywebsite;
+    index index.php;
+    try_files $uri $uri/ /index.php;
+
+    location ~ \.php$ {
+      include snippets/fastcgi-php.conf;
+      fastcgi_pass unix:/var/run/php/php5.6-fpm.sock;
+      fastcgi_param SCRIPT_FILENAME $document_root/index.php;
+    }
+
+    location ~ /\.ht {
+      deny all;
+    }
+  }
+}
+```
+ทำการสร้าง shortcut link ไว้ใน `/etc/nginx/sites-enabled/` ด้วยคำสั่ง
+```bash
+sudo ln -s /etc/nginx/sites-available/your_domain.conf /etc/nginx/sites-enabled/
+```
+ตรวจสอบความถูกต้องของการตั้งค่า NGINX
+```bash
+sudo nginx -t
+```
+ทำการ Restart service ของ NGINX
+```bash
+sudo systemctl reload nginx
+```
+
 ## Reference
 1. [How to install OCI8 on Ubuntu 14.04 and PHP 5.6](http://www.syahzul.com/2016/04/06/how-to-install-oci8-on-ubuntu-14-04-and-php-5-6/)
 2. [วิธีติดตั้ง PHP หลาย Version ให้ใช้งานกับ NGINX บน Ubuntu 20.04](https://github.com/midnighttime-cha/nginx-multiple-php)
