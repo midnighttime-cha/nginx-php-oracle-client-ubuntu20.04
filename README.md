@@ -128,8 +128,7 @@ apt update
 ```
 จากนั้นตั้งค่า Repository ของ PHP กันครับด้วยคำสั่ง
 ```bash
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:ondrej/php ppa:ondrej/nginx-mainline && sudo apt update
+sudo add-apt-repository ppa:ondrej/php && sudo apt update
 ```
 จากนั้นติดตั้ง PHP5.6 และ extension กันได้เลย
 ```bash
@@ -155,6 +154,8 @@ apt -y install php5.6-gettext
 apt -y install php5.6-dev
 apt -y install build-essential
 apt -y install libaio1
+
+sudo update-alternatives --config php
 ```
 
 ### ตรวจสอบว่าได้ลง Extension อะไรไปแล้วบ้าง
