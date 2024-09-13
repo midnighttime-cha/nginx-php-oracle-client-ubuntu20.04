@@ -190,6 +190,12 @@ service php5.6-fpm restart
 service nginx restart
 ```
 
+### หากมีปัญหา `Package 'libaio1' has no installation candidate`
+```
+wget http://archive.ubuntu.com/ubuntu/pool/main/liba/libaio/libaio1_0.3.112-5_amd64.deb
+sudo dpkg -i libaio1_0.3.112-5_amd64.deb
+```
+
 ### ตรวจสอบ OCI8 status
 ```bash
 php --ri oci8
