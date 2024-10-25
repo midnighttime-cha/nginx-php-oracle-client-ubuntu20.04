@@ -133,27 +133,10 @@ sudo add-apt-repository ppa:ondrej/php && sudo apt update
 จากนั้นติดตั้ง PHP8.1 และ extension กันได้เลย
 ```bash
 apt install -y php8.1 php8.1-fpm
-apt -y install php8.1-mysql
-apt -y install php8.1-curl
-apt -y install php8.1-gd
-apt -y install php8.1-intl
-apt -y install php-pear
-apt -y install php-imagick
-apt -y install php8.1-imap
-apt -y install php8.1-mcrypt
-apt -y install php8.1-memcache
-apt -y install php8.1-pspell
-apt -y install php8.1-recode
-apt -y install php8.1-sqlite3
-apt -y install php8.1-tidy
-apt -y install php8.1-xml
-apt -y install php8.1-xmlrpc
-apt -y install php8.1-xsl
-apt -y install php8.1-mbstring
-apt -y install php8.1-gettext
-apt -y install php8.1-dev
-apt -y install build-essential
-apt -y install libaio1
+apt -y install php8.1-mysql php8.1-curl php8.1-gd php8.1-intl php-pear \
+  php-imagick php8.1-imap php8.1-mcrypt php8.1-memcache php8.1-pspell \
+  php8.1-recode php8.1-sqlite3 php8.1-tidy php8.1-xml php8.1-xmlrpc \
+  php8.1-xsl php8.1-mbstring php8.1-gettext php8.1-dev build-essential libaio1
 
 sudo update-alternatives --config php
 ```
