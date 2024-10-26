@@ -137,8 +137,6 @@ apt -y install php8.1-mysql php8.1-curl php8.1-gd php8.1-intl php-pear \
   php-imagick php8.1-imap php8.1-mcrypt php8.1-memcache php8.1-pspell \
 php8.1-sqlite3 php8.1-tidy php8.1-xml php8.1-xmlrpc \
   php8.1-xsl php8.1-mbstring php8.1-gettext php8.1-dev build-essential libaio1
-
-sudo update-alternatives --config php
 ```
 
 ### ตรวจสอบว่าได้ลง Extension อะไรไปแล้วบ้าง
