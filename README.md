@@ -5,10 +5,9 @@
 
 - จัดการ Version ของ PHP
 ```bash
-sudo update-alternatives --install /usr/bin/php php /usr/bin/php7.4 1
-sudo update-alternatives --install /usr/bin/php php /usr/bin/php8.1 2
+sudo update-alternatives --config php
 ```
-หมายเหตุ: ตัวเลขสุดท้าย (เช่น 1 และ 2) คือ Priority ซึ่งสูงกว่าจะมี Priority สูงกว่า
+หมายเหตุ: ตัวเลขสุดท้าย (เช่น 0, 1 และ 2...n) คือ Priority ซึ่ง 0 กว่าจะมี Priority สูงสุดลดหลั่นไปตามลำดับ
 
 ## Reference
 1. [How to install OCI8 on Ubuntu 14.04 and PHP 5.6](http://www.syahzul.com/2016/04/06/how-to-install-oci8-on-ubuntu-14-04-and-php-5-6/)
