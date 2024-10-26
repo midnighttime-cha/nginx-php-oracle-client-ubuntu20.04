@@ -7,7 +7,7 @@
 ```bash
 sudo update-alternatives --config php
 ```
-หมายเหตุ: ตัวเลขสุดท้าย (เช่น 0, 1 และ 2...n) คือ Priority ซึ่ง 0 กว่าจะมี Priority สูงสุดลดหลั่นไปตามลำดับ
+หมายเหตุ: ตรงช่อง selectionจะมีตัวเลขและเครื่องหมาย * ข้างหน้า แสดงว่าเป็น version ปัจจุบัน ให้ทำการกรอกตัวเลข version ที่ต้องการเปลี่ยนแล้วกดปุ่ม Enter
 
 ## Reference
 1. [How to install OCI8 on Ubuntu 14.04 and PHP 5.6](http://www.syahzul.com/2016/04/06/how-to-install-oci8-on-ubuntu-14-04-and-php-5-6/)
