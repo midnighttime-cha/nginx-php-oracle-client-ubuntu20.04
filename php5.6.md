@@ -28,7 +28,9 @@ unzip instantclient-sdk-linux.x64-12.2.0.4.0.zip
 ### ทำการสร้าง .bash_profile 
 ```bash
 nano ~/.bash_profile
+```
 
+```bash
 export ORACLE_HOME=/opt/oracle/instantclient_12_2
 export DYLD_LIBRARY_PATH=$ORACLE_HOME
 export PATH=$PATH:$DYLD_LIBRARY_PATH
