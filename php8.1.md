@@ -151,7 +151,7 @@ dpkg --get-selections | grep -i php
 ### ติดตั้ง oci8
 ```bash
 pecl channel-update pecl.php.net
-pecl install oci8 # Use 'pecl install oci8' to install for PHP 8.
+pecl install oci8-3.2.1
 ```
 
 ### กรอก ORACLE_HOME
