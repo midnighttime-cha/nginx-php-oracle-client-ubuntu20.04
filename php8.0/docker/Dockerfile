@@ -38,7 +38,7 @@ RUN unzip /tmp/instantclient-basiclite-linux.x64-19.3.0.0.0dbru.zip -d /usr/loca
   unzip /tmp/instantclient-sdk-linux.x64-19.3.0.0.0dbru.zip -d /usr/local/ && \
   rm /tmp/instantclient-basiclite-linux.x64-19.3.0.0.0dbru.zip /tmp/instantclient-sdk-linux.x64-19.3.0.0.0dbru.zip &&\
   ln -s /usr/local/instantclient_19_3 /usr/local/instantclient && \
-  echo 'instantclient,/usr/local/instantclient' | pecl install oci8 && \
+  echo 'instantclient,/usr/local/instantclient' | pecl install oci8-3.2.1 && \
   echo "extension=oci8.so" >> /etc/php/8.0/fpm/php.ini
 
 
