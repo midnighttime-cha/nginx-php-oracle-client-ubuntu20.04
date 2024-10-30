@@ -139,8 +139,6 @@ apt install -y php5.6 php5.6-fpm \
  php5.6-curl \
  php5.6-gd \
  php5.6-intl \
- php-pear \
- php-imagick \
  php5.6-imap \
  php5.6-mcrypt \
  php5.6-memcache \
@@ -154,6 +152,8 @@ apt install -y php5.6 php5.6-fpm \
  php5.6-mbstring \
  php5.6-gettext \
  php5.6-dev \
+ php-pear \
+ php-imagick \
  build-essential \
  libaio1
 ```
